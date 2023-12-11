@@ -1,5 +1,6 @@
 name: biogemgt_task
 channels:
+  - anaconda
   - conda-forge
   - anaconda
   - defaults
@@ -19,10 +20,10 @@ dependencies:
   - llvm-openmp=14.0.6=hc6e5704_0
   - ncurses=6.4=h463b476_2
   - numexpr=2.8.7=py311h6dc990b_0
+  - pandas=2.1.1=py311h7aedaa7_0
   - numpy=1.26.0=py311he598dae_0
   - numpy-base=1.26.0=py311hfbfe69c_0
-  - openssl=3.0.12=h1a28f6b_0
-  - pandas=2.1.1=py311h7aedaa7_0
+  - openssl=3.2.0=h0d3ecfb_1
   - pip=23.3.1=pyhd8ed1ab_0
   - python=3.11.0=h3ba56d0_1_cpython
   - python-dateutil=2.8.2=pyhd3eb1b0_0
@@ -35,4 +36,3 @@ dependencies:
   - tzdata=2023c=h71feb2d_0
   - wheel=0.42.0=pyhd8ed1ab_0
   - xz=5.2.6=h57fd34a_0
-prefix: /Users/franbc/anaconda3/envs/biogemgt_task
