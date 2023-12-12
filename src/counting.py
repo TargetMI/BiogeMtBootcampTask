@@ -7,3 +7,4 @@ def count_nucleotides(sequence) -> dict:
 
 def get_length(dataframe: pd.Dataframe) -> dict:
     return dict()
+
