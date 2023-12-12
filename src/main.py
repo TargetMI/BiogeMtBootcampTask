@@ -32,6 +32,8 @@ def main(background_fasta, motif_fasta, output_directory) -> None:
     motif_counts = pd.DataFrame([count_nucleotides(value) for _, value in motif_seq.items()])
     motif_counts.to_csv(path.join(output_directory, 'motif_counts.csv'), header=True)
 
-    get_comparatives(background_counts, motif_counts)
+    wilcoxon_test = list(get_comparatives(background_counts, motif_counts))
+    print(wilcoxon_test)
+
 if __name__ == '__main__':
     main()
