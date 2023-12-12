@@ -1,6 +1,7 @@
 import click
+import pandas as pd
 from Bio import SeqIO as IO
-from counting import count_seq
+from counting import count_nucleotides
 
 
 @click.command()
@@ -20,8 +21,8 @@ def main(background_fasta, motif_fasta, output_directory) -> None:
         raise ValueError('Not a valid format')
     background_seq = IO.to_dict(IO.parse(background_fasta, "fasta"))
     motif_seq = IO.to_dict(IO.parse(motif_fasta, "fasta"))
-    background_counts = [count_seq(seq) for seq in background_seq]
-    motif_counts = [count_seq(seq) for seq in motif_seq]
+    background_counts = pd.DataFrame([count_nucleotides(value) for _, value in background_seq.items()])
+    motif_counts = pd.DataFrame([count_nucleotides(value) for _, value in motif_seq.items()])
 
 
 if __name__ == '__main__':
