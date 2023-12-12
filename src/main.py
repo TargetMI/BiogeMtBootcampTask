@@ -20,8 +20,8 @@ def main(background_fasta, motif_fasta, output_directory) -> None:
     :return: None
     """
     # add a check that the args are fasta
-    if (not (background_fasta is None or motif_fasta is None)
-            and not (background_fasta.endswith('.fa') or motif_fasta.endswith('.fa'))):
+    if ((background_fasta is None or motif_fasta is None or output_directory is None)
+            or not (background_fasta.endswith('.fa') or motif_fasta.endswith('.fa'))):
         raise ValueError('Not a valid format')
     background_seq = IO.to_dict(IO.parse(background_fasta, "fasta"))
     motif_seq = IO.to_dict(IO.parse(motif_fasta, "fasta"))
