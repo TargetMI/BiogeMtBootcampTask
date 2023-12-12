@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88cf9249-9f01-4810-bf7b-fdcdd7d4fe5f" name="Changes" comment="renamed the count_nucleotides function">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/scratch_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/length.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/counting.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/counting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/statistics/statistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/statistics/statistics.py" afterDir="false" />
-    </list>
+    <list default="true" id="88cf9249-9f01-4810-bf7b-fdcdd7d4fe5f" name="Changes" comment="renamed the count_nucleotides function" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,11 +58,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.Length.executor": "Debug",
-    "Python.counting.executor": "Run",
+    "Python.counting.executor": "Debug",
     "Python.main.executor": "Run",
+    "Python.statistics.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging Task4Stats",
+    "git-widget-placeholder": "Task4Stats",
     "last_opened_file_path": "C:/Users/nickc/BiogeMtBootcampTask",
     "node.js.selected.package.tslint": "(autodetect)"
   }
@@ -85,7 +73,7 @@
       <recent name="C:\Users\nickc\BiogeMtBootcampTask\src\counting-nucleotides" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.counting">
+  <component name="RunManager" selected="Python.main">
     <configuration name="Length" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BiogeMtBootcampTask" />
       <option name="ENV_FILES" value="" />
@@ -178,16 +166,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="statistics" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BiogeMtBootcampTask" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/statistics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/statistics/statistics.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.counting" />
+      <item itemvalue="Python.statistics" />
       <item itemvalue="Python.Length" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.fasta_length_counter" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.counting" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.statistics" />
+        <item itemvalue="Python.counting" />
         <item itemvalue="Python.Length" />
         <item itemvalue="Python.fasta_length_counter" />
       </list>
@@ -230,12 +243,12 @@
     <option name="LAST_COMMIT_MESSAGE" value="renamed the count_nucleotides function" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/BiogeMtBootcampTask$counting.coverage" NAME="counting Coverage Results" MODIFIED="1702393027195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/BiogeMtBootcampTask$counting.coverage" NAME="counting Coverage Results" MODIFIED="1702393851270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/BiogeMtBootcampTask$utilities.coverage" NAME="main Coverage Results" MODIFIED="1702380689620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/BiogeMtBootcampTask$statistics.coverage" NAME="statistics Coverage Results" MODIFIED="1702392365284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/statistics" />
+    <SUITE FILE_PATH="coverage/BiogeMtBootcampTask$statistics.coverage" NAME="statistics Coverage Results" MODIFIED="1702394582233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/statistics" />
     <SUITE FILE_PATH="coverage/BiogeMtBootcampTask$fasta_length_counter.coverage" NAME="fasta_length_counter Coverage Results" MODIFIED="1702370757013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/length-of-sequences" />
     <SUITE FILE_PATH="coverage/BiogeMtBootcampTask$Length.coverage" NAME="Length Coverage Results" MODIFIED="1702390355335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/counting-nucleotides" />
-    <SUITE FILE_PATH="coverage/BiogeMtBootcampTask$main.coverage" NAME="main Coverage Results" MODIFIED="1702393016470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/BiogeMtBootcampTask$main.coverage" NAME="main Coverage Results" MODIFIED="1702395529222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/BiogeMtBootcampTask$plotting.coverage" NAME="plotting Coverage Results" MODIFIED="1702387975333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/plotting" />
   </component>
 </project>
