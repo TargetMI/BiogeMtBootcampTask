@@ -14,6 +14,8 @@ def check_fasta(fasta_file):
         raise ValueError(f'Not a valid fasta format. Accepted: {",".join(FASTA_FORMATS)}')
     return True
 
+from statistics.statistics import output_statistics
+
 
 @click.command()
 @click.option('-b', '--background_fasta', type=str, help='The fasta file containing the background'
@@ -42,6 +44,8 @@ def main(background_fasta, motif_fasta, output_directory) -> None:
     background_counts.to_csv(path.join(output_directory, 'background_counts.csv'), header=True)
 
     plot_functions(background_counts, motif_counts, output_directory)
+
+    output_statistics(background_counts, motif_counts)
 
 
 if __name__ == '__main__':
