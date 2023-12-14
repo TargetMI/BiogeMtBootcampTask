@@ -6,7 +6,7 @@ from Bio import SeqIO as IO
 
 from counting import count_nucleotides
 
-from statistics.statistics import get_descriptives, get_comparatives
+from statistics.statistics import output_statistics
 
 
 @click.command()
@@ -32,8 +32,8 @@ def main(background_fasta, motif_fasta, output_directory) -> None:
     motif_counts = pd.DataFrame([count_nucleotides(value) for _, value in motif_seq.items()])
     motif_counts.to_csv(path.join(output_directory, 'motif_counts.csv'), header=True)
 
-    wilcoxon_test = list(get_comparatives(background_counts, motif_counts))
-    print(wilcoxon_test)
+    output_statistics(background_counts, motif_counts)
+
 
 if __name__ == '__main__':
     main()

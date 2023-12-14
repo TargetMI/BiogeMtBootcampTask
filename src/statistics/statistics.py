@@ -8,3 +8,11 @@ def get_descriptives(background_counts, motif_counts):
 def get_comparatives(background_counts, motif_counts): # Wilcoxon Test
     for column in background_counts.columns:
         yield stats.ranksums(background_counts[column], motif_counts[column])
+
+def output_statistics(background_counts, motif_counts):
+    with open("statistics.txt", "w") as f:
+         print(get_descriptives(background_counts, motif_counts), file=f)
+         print(list(get_comparatives(background_counts, motif_counts)), file=f)
+
+
+
