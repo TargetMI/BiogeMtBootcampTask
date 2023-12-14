@@ -64,7 +64,7 @@ def melt_dataframe(dataset,
                    value_name=value_name)
 
 
-def create_pairplot(dataset: pd.DataFrame, title='Bar plot comparing the frequency', *_):
+def create_pairplot(dataset: pd.DataFrame, title='Bar plot comparing the frequency', *_, **__):
     """
     A function to create the bar plot
     :param dataset: the dataset
