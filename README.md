@@ -26,23 +26,28 @@ The following section helps uyou get up and running with the project
    
    conda activate biogemgt_task
    ```
-3. Enter your API in `config.js`
-   ```sh
-   cd src/ & python main.py
-   ```
+### Running
+
+```shell
+cd src/ && python main.py
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+[//]: # (<!-- USAGE EXAMPLES -->)
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+[//]: # (## Usage)
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+[//]: # ()
+[//]: # (Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+[//]: # ()
+[//]: # (_For more examples, please refer to the [Documentation]&#40;https://example.com&#41;_)
+
+[//]: # ()
+[//]: # (<p align="right">&#40;<a href="#readme-top">back to top</a>&#41;</p>)
 
 
 
