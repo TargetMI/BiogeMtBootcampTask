@@ -26,6 +26,11 @@ The following section helps uyou get up and running with the project
    
    conda activate biogemgt_task
    ```
+### Running
+
+```shell
+cd src/ && python main.py
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
